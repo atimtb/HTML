@@ -12,14 +12,31 @@
         color: rebeccapurple;
       }
 
-      #first {
+      #firstid {
         color: blue;
         font-weight: bold;
+      }
+      p::first-letter {
+        font-size: 140%;
+        font-weight: bold;
+        color: aqua;
+      }
+
+      p::first-line {
+        font-weight: bold;
+      }
+
+      ::selection {
+        background-color: red;
+      }
+      P::before {
+        content: "...";
+        display: block;
       }
     </style>
   </head>
   <body>
-    <p id="first">Lorem ipsum dolor sit amet.</p>
+    <p id="firstid">Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <a href="https://google.com" target="_blank">Google</a>
     <a href="https://yahoo.com" target="_blank">Yahoo</a>
@@ -45,5 +62,26 @@
         <li>Item 5</li>
       </ul>
     </article>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facere
+      minima ea dolorum dolores adipisci provident obcaecati nisi quasi! Ipsum,
+      beatae explicabo? Dolore in iste dicta praesentium, consequuntur ipsa
+      asperiores ducimus maxime itaque nesciunt! Enim dolor minus incidunt,
+      nostrum ea suscipit quod natus in quam dolores ab eligendi eveniet
+      accusamus?
+    </p>
+    <article>
+      <h1 class="highlight">Heading</h1>
+    </article>
+
+    <p>Lorem ipsum <strong>dolor</strong> sit amet.</p>
+
+    <div class="box">
+      <h1 class="shadowtest">Heading</h1>
+    </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
   </body>
 </html>

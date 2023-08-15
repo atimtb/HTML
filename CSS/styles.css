@@ -35,3 +35,64 @@ a[href*="yahoo"]{
     color: darkslategrey;
   }
 
+  h1{
+    color: darkblue;
+  }
+
+  h1.highlight {
+    color: pink;
+  }
+
+p {
+  color: blue;
+  border: 1px solid black ;
+}
+
+strong{
+  color: initial;
+  border: inherit ;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(186, 94, 89 , 0.5) ;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: #59ba59 ;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(198, 100%, 50% , 0.5) ;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg ,dodgerblue, red 80% , black) ;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at top left , white, yellow);
+  border: 10px dashed royalblue;
+  border-top: 20px solid blue;
+  border-width: 10px 20px 10px 20px;  /*trbl*/
+  border-radius: 200px;
+  box-shadow: 0 0 10px gray;
+
+}
+
+h1.shadowtest{
+  color: black;
+  text-shadow:3px 3px 5px rgb(0, 0, 0 , 0.3) ;
+}
+
+
+
