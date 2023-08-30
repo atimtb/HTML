@@ -1,0 +1,49 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+div{
+    background: black;
+    padding: 0.7rem
+
+}
+
+div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+
+}
+
+div li {
+    margin: .5rem 0;    
+}
+
+a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    div ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    div li{
+        margin:0 1rem;
+    }
+    
+}
+
+
