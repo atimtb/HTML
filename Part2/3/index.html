@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <h1>My Heading</h1>
+    <span class="bg-dishes"></span>
+    <span class="bg-landing"></span>
+    <span class="bg-rocketship"></span>
+    <span class="bg-ufo"></span>
+    <span class="bg-saturn"></span>
+
+    <img class="dog" src="CSS/images/dog.jpg" alt="" />
+
+    <img
+      src="CSS/images/meal.jpg"
+      alt=""
+      class="meal"
+      srcset="
+        CSS/images/meal.jpg     400w,
+        CSS/images/meal@2x.jpg  800w,
+        CSS/images/meal@3x.jpg 1200w
+      "
+      sizes="
+        (max-width:600px) 100vw,
+        (max-width:800px) 50vw,
+        33vw
+      "
+    />
+
+    <picture>
+      <source type="CSS/images/webp" srcset="CSS/images/meal.webp" />
+      <source type="CSS/images/jpeg" srcset="CSS/images/meal.jpg" />
+    </picture>
+
+    <picture>
+      <source media="(max-width: 500px)" srcset="CSS/images/cat-cropped.jpg" />
+      <source media="(min-width: 501px)" srcset="CSS/images/cat.jpg" />
+      <img src="CSS/images/cat.jpg" alt="" />
+    </picture>
+
+    <img class="ufo" src="CSS/images/ufo.svg" alt="" />
+  </body>
+</html>
